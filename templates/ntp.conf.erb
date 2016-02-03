@@ -1,0 +1,4 @@
+driftfile /var/lib/ntp/drift
+<%- public_ntp_servers.each do|ntp_server| -%>
+server <%= ntp_server %>
+<%- end -%>
